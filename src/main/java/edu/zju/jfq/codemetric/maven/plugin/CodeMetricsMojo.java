@@ -14,8 +14,8 @@ import org.eclipse.sisu.Parameters;;import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-@Mojo(name = "sayhi")
-public class GreetingMojo extends AbstractMojo {
+@Mojo(name = "calculate")
+public class CodeMetricsMojo extends AbstractMojo {
 	@Parameter(defaultValue = "${session}", readonly = true)
 	private MavenSession session;
 
@@ -29,15 +29,22 @@ public class GreetingMojo extends AbstractMojo {
 	private RuntimeInformation runtimeInformation;
 
 	public void execute() throws MojoExecutionException {
-		DependencyCollector dependencyCollector = new DependencyCollector(dependencyTreeBuilder, localRepository);
-		List<MavenProject> mavenProjects = session.getProjects();
+	    try {
+            DependencyCollector dependencyCollector = new DependencyCollector(dependencyTreeBuilder, localRepository);
+            List<MavenProject> mavenProjects = session.getProjects();
 
-		for (MavenProject pro : mavenProjects) {
-//
-		}
-//		getLog().info(dependencies.toString());
-		Properties properties = session.getUserProperties();
-		System.out.println(localRepository.toString());
+            MavenProjectConvert mpc = null;
+            for (MavenProject pro : mavenProjects) {
+                if (pro.getPackaging().equals("pom") || pro.getCollectedProjects().size() > 0)
+                    continue;
+                mpc = new MavenProjectConvert(pro, dependencyCollector, localRepository);
+                mpc.setConfig();
+                getLog().error(mpc.getConfig().toString());
+                //以下调用分析代码即可。
+            }
+        } catch (Exception e) {
+	        getLog().error("Some error in your project.");
+        }
 	}
 
 }

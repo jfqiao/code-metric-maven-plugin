@@ -19,6 +19,7 @@
  */
 package edu.zju.jfq.codemetric.maven.plugin;
 
+import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.repository.ArtifactRepository;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.shared.dependency.tree.DependencyNode;
@@ -36,140 +37,168 @@ import java.util.*;
 
 public class DependencyCollector {
 
-  private final DependencyTreeBuilder dependencyTreeBuilder;
+    private final DependencyTreeBuilder dependencyTreeBuilder;
 
-  private final ArtifactRepository localRepository;
+    private final ArtifactRepository localRepository;
 
-  public DependencyCollector(DependencyTreeBuilder dependencyTreeBuilder, ArtifactRepository localRepository) {
-    this.dependencyTreeBuilder = dependencyTreeBuilder;
-    this.localRepository = localRepository;
-  }
-
-  static class Dependency {
-
-    private final String key;
-
-    private final String version;
-
-    private String scope;
-
-    List<Dependency> dependencies = new ArrayList<Dependency>();
-
-    public Dependency(String key, String version) {
-      this.key = key;
-      this.version = version;
+    public DependencyCollector(DependencyTreeBuilder dependencyTreeBuilder, ArtifactRepository localRepository) {
+        this.dependencyTreeBuilder = dependencyTreeBuilder;
+        this.localRepository = localRepository;
     }
 
-    public String key() {
-      return key;
-    }
+    static class Dependency {
 
-    public String version() {
-      return version;
-    }
+//    private final String groupId;
 
-    public String scope() {
-      return scope;
-    }
+//    private final String artifactId;
 
-    public Dependency setScope(String scope) {
-      this.scope = scope;
-      return this;
-    }
+//    private final String key;
 
-    public List<Dependency> dependencies() {
-      return dependencies;
-    }
-  }
+//    private final String version;
 
-  public List<Dependency> collectProjectDependencies(MavenProject project) {
-    final List<Dependency> result = new ArrayList<>();
-    try {
-      DependencyNode root = dependencyTreeBuilder.buildDependencyTree(project, localRepository, null);
+        //    private String scope;
+        private Artifact artifact;
 
-      DependencyNodeVisitor visitor = new BuildingDependencyNodeVisitor(new DependencyNodeVisitor() {
+        List<Dependency> dependencies = new ArrayList<Dependency>();
 
-        private Deque<Dependency> stack = new ArrayDeque<Dependency>();
-
-        @Override
-        public boolean visit(DependencyNode node) {
-          if (node.getParent() != null && node.getParent() != node) {
-            Dependency dependency = toDependency(node);
-            if (stack.isEmpty()) {
-              result.add(dependency);
-            } else {
-              stack.peek().dependencies().add(dependency);
-            }
-            stack.push(dependency);
-          }
-          return true;
+        public Dependency(String groupId, String artifactId, String version) {
+//      this.key = key;
+//      this.groupId = groupId;
+//      this.artifactId = artifactId;
+//      this.version = version;
         }
 
-        @Override
-        public boolean endVisit(DependencyNode node) {
-          if (!stack.isEmpty()) {
-            stack.pop();
-          }
-          return true;
+        public Dependency(Artifact artifact) {
+//        this.scope = scope;
+            this.artifact = artifact;
         }
-      });
 
-      /// mode verbose OFF : do not show the same lib many times
-      DependencyNodeFilter filter = StateDependencyNodeFilter.INCLUDED;
+//    public String key() {
+//      return key;
+//    }
 
-      CollectingDependencyNodeVisitor collectingVisitor = new CollectingDependencyNodeVisitor();
-      DependencyNodeVisitor firstPassVisitor = new FilteringDependencyNodeVisitor(collectingVisitor, filter);
-      root.accept(firstPassVisitor);
+//    public String getGroupId() {
+//      return groupId;
+//    }
+//
+//    public String getArtifactId() {
+//      return artifactId;
+//    }
+//
+//    public String getVersion() {
+//      return version;
+//    }
 
-      DependencyNodeFilter secondPassFilter = new AncestorOrSelfDependencyNodeFilter(collectingVisitor.getNodes());
-      visitor = new FilteringDependencyNodeVisitor(visitor, secondPassFilter);
+//    public String scope() {
+//      return scope;
+//    }
+//
+//    public Dependency setScope(String scope) {
+//      this.scope = scope;
+//      return this;
+//    }
 
-      root.accept(visitor);
+        public Artifact getArtifact() {
+            return artifact;
+        }
 
-    } catch (DependencyTreeBuilderException e) {
-      throw new IllegalStateException("Can not load the graph of dependencies of the project " + project, e);
+        public List<Dependency> dependencies() {
+            return dependencies;
+        }
     }
-    return result;
-  }
 
-  private Dependency toDependency(DependencyNode node) {
-    String key = String.format("%s:%s", node.getArtifact().getGroupId(), node.getArtifact().getArtifactId());
-    String version = node.getArtifact().getBaseVersion();
-    return new Dependency(key, version).setScope(node.getArtifact().getScope());
-  }
+    public List<Dependency> collectProjectDependencies(MavenProject project) {
+        final List<Dependency> result = new ArrayList<>();
+        try {
+            DependencyNode root = dependencyTreeBuilder.buildDependencyTree(project, localRepository, null);
 
-  public String toJson(MavenProject project) {
-    return dependenciesToJson(collectProjectDependencies(project));
-  }
+            DependencyNodeVisitor visitor = new BuildingDependencyNodeVisitor(new DependencyNodeVisitor() {
 
-  private String dependenciesToJson(List<Dependency> deps) {
-    StringBuilder json = new StringBuilder();
-    json.append('[');
-    serializeDeps(json, deps);
-    json.append(']');
-    return json.toString();
-  }
+                private Deque<Dependency> stack = new ArrayDeque<Dependency>();
 
-  private void serializeDeps(StringBuilder json, List<Dependency> deps) {
-    for (Iterator<Dependency> dependencyIt = deps.iterator(); dependencyIt.hasNext();) {
-      serializeDep(json, dependencyIt.next());
-      if (dependencyIt.hasNext()) {
-        json.append(',');
-      }
+                @Override
+                public boolean visit(DependencyNode node) {
+                    if (node.getParent() != null && node.getParent() != node) {
+                        Dependency dependency = toDependency(node);
+                        if (stack.isEmpty()) {
+                            result.add(dependency);
+                        } else {
+                            stack.peek().dependencies().add(dependency);
+                        }
+                        stack.push(dependency);
+                    }
+                    return true;
+                }
+
+                @Override
+                public boolean endVisit(DependencyNode node) {
+                    if (!stack.isEmpty()) {
+                        stack.pop();
+                    }
+                    return true;
+                }
+            });
+
+            /// mode verbose OFF : do not show the same lib many times
+            DependencyNodeFilter filter = StateDependencyNodeFilter.INCLUDED;
+
+            CollectingDependencyNodeVisitor collectingVisitor = new CollectingDependencyNodeVisitor();
+            DependencyNodeVisitor firstPassVisitor = new FilteringDependencyNodeVisitor(collectingVisitor, filter);
+            root.accept(firstPassVisitor);
+
+            DependencyNodeFilter secondPassFilter = new AncestorOrSelfDependencyNodeFilter(collectingVisitor.getNodes());
+            visitor = new FilteringDependencyNodeVisitor(visitor, secondPassFilter);
+
+            root.accept(visitor);
+
+        } catch (DependencyTreeBuilderException e) {
+            throw new IllegalStateException("Can not load the graph of dependencies of the project " + project, e);
+        }
+        return result;
     }
-  }
 
-  private void serializeDep(StringBuilder json, Dependency dependency) {
-    json.append("{");
-    json.append("\"k\":\"");
-    json.append(dependency.key());
-    json.append("\",\"v\":\"");
-    json.append(dependency.version());
-    json.append("\",\"s\":\"");
-    json.append(dependency.scope());
-    json.append("\",\"d\":[");
-    serializeDeps(json, dependency.dependencies());
-    json.append("]");
-    json.append("}");
-  }
+    private Dependency toDependency(DependencyNode node) {
+//        String path = localRepository.pathOf(node.getArtifact());
+
+//    String key = String.format("%s:%s", node.getArtifact().getGroupId(), node.getArtifact().getArtifactId());
+        String version = node.getArtifact().getBaseVersion();
+//    return new Dependency(node.getArtifact().getGroupId(),
+//            node.getArtifact().getArtifactId(), version).setScope(node.getArtifact().getScope());
+        return new Dependency(node.getArtifact());
+    }
+
+//  public String toJson(MavenProject project) {
+//    return dependenciesToJson(collectProjectDependencies(project));
+//  }
+//
+//  private String dependenciesToJson(List<Dependency> deps) {
+//    StringBuilder json = new StringBuilder();
+//    json.append('[');
+//    serializeDeps(json, deps);
+//    json.append(']');
+//    return json.toString();
+//  }
+//
+//  private void serializeDeps(StringBuilder json, List<Dependency> deps) {
+//    for (Iterator<Dependency> dependencyIt = deps.iterator(); dependencyIt.hasNext();) {
+//      serializeDep(json, dependencyIt.next());
+//      if (dependencyIt.hasNext()) {
+//        json.append(',');
+//      }
+//    }
+//  }
+//
+//  private void serializeDep(StringBuilder json, Dependency dependency) {
+//    json.append("{");
+//    json.append("\"k\":\"");
+//    json.append(dependency.key());
+//    json.append("\",\"v\":\"");
+//    json.append(dependency.version());
+//    json.append("\",\"s\":\"");
+//    json.append(dependency.scope());
+//    json.append("\",\"d\":[");
+//    serializeDeps(json, dependency.dependencies());
+//    json.append("]");
+//    json.append("}");
+//  }
 }
