@@ -17,7 +17,147 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+              <caret line="54" column="162" lean-forward="false" selection-start-line="54" selection-start-column="162" selection-end-line="54" selection-end-column="162" />
+              <folding>
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeMetricsMojoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maven-4.0.0.xsd" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="2148" column="34" lean-forward="false" selection-start-line="2148" selection-start-column="24" selection-end-line="2148" selection-end-column="34" />
+              <folding>
+                <element signature="n#xs:complexType#0;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#1;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#2;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#3;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#4;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#5;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#6;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#7;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#8;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#9;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#10;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#11;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#12;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#14;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#15;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#16;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#17;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#18;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#19;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#20;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#21;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#22;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#23;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#24;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#25;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#26;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#27;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#28;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#29;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#30;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#31;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#32;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#34;n#xs:schema#0;n#!!top" expanded="false" />
+                <element signature="n#xs:complexType#35;n#xs:schema#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MavenProjectConvert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/MavenProjectConvert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="e#4921#4922#0" expanded="true" />
+                <element signature="e#4950#4951#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DependencyCollector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/DependencyCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2595">
+              <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MavenProject.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0-sources.jar!/org/apache/maven/project/MavenProject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-869">
+              <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+              <folding>
+                <element signature="e#17194#17195#0" expanded="true" />
+                <element signature="e#17232#17233#0" expanded="true" />
+                <element signature="e#29922#29923#0" expanded="true" />
+                <element signature="e#29971#29972#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Build.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Build.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-130">
+              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Properties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dependency.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Dependency.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1138">
+              <caret line="145" column="29" lean-forward="false" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -43,7 +183,6 @@
       <find>Depend</find>
       <find>Dependen</find>
       <find>Dependenc</find>
-      <find>Dependency</find>
       <find>dependenciesToJson</find>
       <find>toString</find>
       <find>toDependency</find>
@@ -54,6 +193,16 @@
       <find>enco</find>
       <find>config</find>
       <find>plugin</find>
+      <find>prope</find>
+      <find>sourceDi</find>
+      <find>getBui</find>
+      <find>modelEncoding</find>
+      <find>project descriptor</find>
+      <find>sourceD</find>
+      <find>properties</find>
+      <find>Dependency</find>
+      <find>Prope</find>
+      <find>Build</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -71,9 +220,10 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/GreetingMojo.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/DependencyCollector.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/bootstrap/OutputConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/MavenProjectConvert.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojo.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -127,6 +277,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,6 +558,17 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -672,12 +845,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499416135572</updated>
       <workItem from="1499416138128" duration="25176000" />
-      <workItem from="1499680039848" duration="246000" />
+      <workItem from="1499680039848" duration="15444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25422000" />
+    <option name="totallyTimeSpent" value="40620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
@@ -696,17 +869,17 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540453" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25809062" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33599088" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33599088" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -724,9 +897,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="11" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="pro.getBuild().getDirectory()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -748,17 +925,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/bootstrap/MavenProjectConvert.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-artifact/3.5.0/maven-artifact-3.5.0-sources.jar!/org/apache/maven/artifact/Artifact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1356">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-artifact/3.5.0/maven-artifact-3.5.0-sources.jar!/org/apache/maven/artifact/repository/ArtifactRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="44" column="11" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,22 +962,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/DependencyCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3413#3414#0" expanded="false" />
-            <element signature="e#3452#3453#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0-sources.jar!/org/apache/maven/lifecycle/internal/MojoExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1260">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,38 +977,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2323">
-          <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/MavenProjectConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="114" column="22" lean-forward="false" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3639#3640#0" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0-sources.jar!/org/apache/maven/plugin/DefaultBuildPluginManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,43 +999,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0-sources.jar!/org/apache/maven/project/MavenProject.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-plugin-api/3.5.0/maven-plugin-api-3.5.0.jar!/org/apache/maven/plugin/AbstractMojo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="774" column="19" lean-forward="true" selection-start-line="774" selection-start-column="19" selection-end-line="774" selection-end-column="19" />
+        <state relative-caret-position="191">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/plugin-tools/maven-plugin-annotations/3.4/maven-plugin-annotations-3.4.jar!/org/apache/maven/plugins/annotations/Parameter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0.jar!/org/apache/maven/model/Extension.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0.jar!/org/apache/maven/model/Build.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3171">
+          <caret line="840" column="7" lean-forward="true" selection-start-line="840" selection-start-column="7" selection-end-line="840" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar!/org/codehaus/plexus/classworlds/realm/ClassRealm.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-artifact/3.5.0/maven-artifact-3.5.0-sources.jar!/org/apache/maven/artifact/Artifact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Extension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/BuildBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/bootstrap/OutputConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="282">
+          <caret line="61" column="71" lean-forward="false" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
           <folding>
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Dependency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1138">
+          <caret line="145" column="29" lean-forward="false" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="2148" column="34" lean-forward="false" selection-start-line="2148" selection-start-column="24" selection-end-line="2148" selection-end-column="34" />
+          <folding>
+            <element signature="n#xs:complexType#0;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#1;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#2;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#3;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#4;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#5;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#6;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#7;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#8;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#9;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#10;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#11;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#12;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#14;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#15;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#16;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#17;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#18;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#19;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#20;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#21;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#22;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#23;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#24;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#25;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#26;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#27;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#28;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#29;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#30;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#31;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#32;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#34;n#xs:schema#0;n#!!top" expanded="false" />
+            <element signature="n#xs:complexType#35;n#xs:schema#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-plugin-api/3.5.0/maven-plugin-api-3.5.0.jar!/org/apache/maven/plugin/MojoExecutionException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0-sources.jar!/org/apache/maven/model/Build.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0-sources.jar!/org/apache/maven/project/MavenProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-869">
+          <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding>
+            <element signature="e#17194#17195#0" expanded="true" />
+            <element signature="e#17232#17233#0" expanded="true" />
+            <element signature="e#29922#29923#0" expanded="true" />
+            <element signature="e#29971#29972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/MavenProjectConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#4921#4922#0" expanded="true" />
+            <element signature="e#4950#4951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/DependencyCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2595">
+          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/zju/jfq/codemetric/maven/plugin/CodeMetricsMojo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-          <folding />
+          <caret line="54" column="162" lean-forward="false" selection-start-line="54" selection-start-column="162" selection-end-line="54" selection-end-column="162" />
+          <folding>
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

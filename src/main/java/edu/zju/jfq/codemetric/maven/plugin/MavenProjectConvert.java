@@ -22,6 +22,9 @@ public class MavenProjectConvert {
     //    private String path;
     private OutputConfig config;
 
+    private static final String UNABLE_TO_DETERMINE_PROJECT_STRUCTURE_EXCEPTION_MESSAGE = "Unable to determine structure of project."
+            + " Probably you use Maven Advanced Reactor Options with a broken tree of modules.";
+
 
     public MavenProjectConvert(MavenProject project, DependencyCollector collector,
                                ArtifactRepository localRepository) {
@@ -55,6 +58,8 @@ public class MavenProjectConvert {
         //如果有依赖包
         if (sb.length() > 0)
             config.setDependencyPath(sb.substring(0, sb.length() - 1));
+        else
+            config.setDependencyPath("");
 //        path = sb.substring(0, sb.length() - 1);
     }
 
@@ -73,8 +78,11 @@ public class MavenProjectConvert {
 
     //默认的源文件目录：baseDir/src/main/java
     private void setSourceFilePath() {
-        config.setSourceFilePath(project.getBuild().getSourceDirectory());
-//        config.setSourceFilePath(project.getCompileSourceRoots().get(0));
+        //手工设定项目的源代码
+        String sourcePath = project.getBuild().getSourceDirectory();
+        if (sourcePath != null)
+            config.setSourceFilePath(project.getBuild().getSourceDirectory());
+        config.setSourceFilePath(project.getBasedir().getAbsolutePath() + "/src/main/java/");
     }
 
     /*
@@ -82,7 +90,9 @@ public class MavenProjectConvert {
     目录下
      */
     private void setCompileFilePath() {
-        if (project.getBuild() == null)
+        // outputDirectory 指的是所有的Java文件编译后保存的地址,
+        //在build标签中可以指明。
+        if (project.getBuild().getOutputDirectory() == null)
             config.setCompileFilePath(project.getBasedir().getAbsolutePath() + "/target/classes/");
         config.setCompileFilePath(project.getBuild().getOutputDirectory());
 
@@ -93,15 +103,34 @@ public class MavenProjectConvert {
     pom文件中不指定target编译地址。
      */
     private void setJarFilePath() {
+        //directory 在build标签中指明，（没有指明则有一个默认地址,即为target/目录下）
+        //目前getDirectory返回的结果就是输出路径，不会出现空值。
+//        String directory = project.getBuild().getDirectory();
         StringBuilder sb = new StringBuilder();
-        sb.append(project.getBuild().getOutputDirectory())
-                .append("/")
+        sb.append(project.getBuild().getDirectory())
                 .append(project.getArtifactId())
                 .append("-")
                 .append(project.getVersion())
                 .append(".")
                 .append(project.getModel().getPackaging());
+//        if (directory == null) {
+//            config.setOutputJarPath(project.getBasedir() + "/target/" + sb.toString());
+//        }
         config.setOutputJarPath(sb.toString());
+    }
+
+    /*
+     * 设置源代码文件的编码方式，maven项目中通过在pom文件中properties
+     * 标签下添加project.build.sourceEncoding确定源代码的编码。
+     * 如果properties中没有相关设置，默认设置为UTF-8编码
+     * 否则根据项目具体设置进行。
+     */
+    private void setSourceFileEnconding() {
+        String encoding = (String) project.getProperties().get("project.build.sourceEncoding");
+        if (encoding == null)
+            config.setSourceFilePath("UTF-8");
+        else config.setSourceFileEncoding(encoding);
+
     }
 
     public void setConfig() {
@@ -109,6 +138,7 @@ public class MavenProjectConvert {
         setJarFilePath();
         setCompileFilePath();
         setSourceFilePath();
+        setSourceFileEnconding();
     }
 
     public OutputConfig getConfig() {

@@ -28,6 +28,14 @@ public class CodeMetricsMojo extends AbstractMojo {
 	@Component
 	private RuntimeInformation runtimeInformation;
 
+	public MavenSession getSession() {
+	    return session;
+    }
+
+    public void setLocalRepository(ArtifactRepository localRepository) {
+	    this.localRepository = localRepository;
+    }
+
 	public void execute() throws MojoExecutionException {
 	    try {
             DependencyCollector dependencyCollector = new DependencyCollector(dependencyTreeBuilder, localRepository);
@@ -40,10 +48,11 @@ public class CodeMetricsMojo extends AbstractMojo {
                 mpc = new MavenProjectConvert(pro, dependencyCollector, localRepository);
                 mpc.setConfig();
                 getLog().error(mpc.getConfig().toString());
-                //以下调用分析代码即可。
+                //以下调用分析代码即可。相关配置在pro.config对象中
             }
         } catch (Exception e) {
-	        getLog().error("Some error in your project.");
+	        getLog().error("Some error in pom.xml file.");
+            C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\bootstrap\OutputConfig.java
         }
 	}
 
