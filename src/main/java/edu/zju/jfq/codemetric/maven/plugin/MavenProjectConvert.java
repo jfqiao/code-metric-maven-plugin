@@ -5,6 +5,7 @@ import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.repository.ArtifactRepository;
 import org.apache.maven.project.MavenProject;
 import edu.zju.jfq.codemetric.maven.plugin.DependencyCollector.*;
+import org.codehaus.plexus.util.xml.Xpp3Dom;
 
 import java.util.HashSet;
 import java.util.List;
@@ -108,6 +109,7 @@ public class MavenProjectConvert {
 //        String directory = project.getBuild().getDirectory();
         StringBuilder sb = new StringBuilder();
         sb.append(project.getBuild().getDirectory())
+                .append("/")
                 .append(project.getArtifactId())
                 .append("-")
                 .append(project.getVersion())
@@ -127,8 +129,14 @@ public class MavenProjectConvert {
      */
     private void setSourceFileEnconding() {
         String encoding = (String) project.getProperties().get("project.build.sourceEncoding");
-        if (encoding == null)
-            config.setSourceFilePath("UTF-8");
+        if (encoding == null) {
+            encoding = new Xpp3Dom((Xpp3Dom)(project.getPlugin("org.apache.maven.plugins:maven-compiler-plugin")
+                    .getConfiguration())).getChild("encoding").getValue();
+            if (encoding == null)
+                config.setSourceFileEncoding("UTF-8");
+            else
+                config.setSourceFileEncoding(encoding);
+        }
         else config.setSourceFileEncoding(encoding);
 
     }
@@ -144,4 +152,6 @@ public class MavenProjectConvert {
     public OutputConfig getConfig() {
         return config;
     }
+
+
 }

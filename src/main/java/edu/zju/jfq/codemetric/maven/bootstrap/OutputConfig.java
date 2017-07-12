@@ -14,6 +14,11 @@ public class OutputConfig {
     private String sourceFilePath;
     //源码编码方式，如果源码有多个不同文件夹，则对应中编码方式，与源码地址一一对应
     private String sourceFileEncoding;
+    //过滤不分析文件的正则表达式
+    private String[] filters;
+    //对分析结果的输出目录
+    private String outputDir;
+
 
 
     public String getdependencyPath() {
@@ -54,6 +59,22 @@ public class OutputConfig {
 
     public void setSourceFileEncoding(String sourceFileEncoding) {
         this.sourceFileEncoding = sourceFileEncoding;
+    }
+
+    public void setFilters(String[] filters) {
+        this.filters = filters;
+    }
+
+    public String[] getFilters() {
+        return filters;
+    }
+
+    public void setOutputDir(String outputDir) {
+        this.outputDir = outputDir;
+    }
+
+    public String getOutputDir() {
+        return outputDir;
     }
 
     @Override

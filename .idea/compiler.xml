@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="codemetric-maven-plugin" target="1.8" />
+      <module name="sinlge-module-with-jar" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

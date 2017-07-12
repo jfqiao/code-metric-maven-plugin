@@ -10,9 +10,9 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.rtinfo.RuntimeInformation;
 import org.apache.maven.shared.dependency.tree.DependencyTreeBuilder;
-import org.eclipse.sisu.Parameters;;import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
+
+import ccnt.analysis.metrics.Main;
 
 @Mojo(name = "calculate")
 public class CodeMetricsMojo extends AbstractMojo {
@@ -47,12 +47,17 @@ public class CodeMetricsMojo extends AbstractMojo {
                     continue;
                 mpc = new MavenProjectConvert(pro, dependencyCollector, localRepository);
                 mpc.setConfig();
-                getLog().error(mpc.getConfig().toString());
-                //以下调用分析代码即可。相关配置在pro.config对象中
+//                getLog().error(mpc.getConfig().toString());
+                Main.calculateMetric(mpc.getConfig().getSourceFilePath(),
+                                     mpc.getConfig().getCompileFilePath(),
+                                     mpc.getConfig().getOutputJarPath(),
+                                     mpc.getConfig().getSourceFileEncoding(),
+                                     mpc.getConfig().getdependencyPath(),
+                                     pro.getBasedir().getAbsolutePath(), null,
+                                     pro.getName());
             }
         } catch (Exception e) {
 	        getLog().error("Some error in pom.xml file.");
-            C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\bootstrap\OutputConfig.java
         }
 	}
 

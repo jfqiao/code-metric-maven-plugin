@@ -1,5 +1,5 @@
-C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\CodeMetricsMojo.java
-C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\depency\tree\DependencyTreeResolutionListener.java
-C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\bootstrap\OutputConfig.java
-C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\MavenProjectConvert.java
-C:\Users\fangqiao.jfq\Documents\codemetric-maven-plugin\codemetric.maven.plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\DependencyCollector.java
+C:\Users\fangqiao.jfq\Documents\code-metric-maven-plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\CodeMetricsMojo.java
+C:\Users\fangqiao.jfq\Documents\code-metric-maven-plugin\src\main\java\edu\zju\jfq\codemetric\maven\depency\tree\DependencyTreeResolutionListener.java
+C:\Users\fangqiao.jfq\Documents\code-metric-maven-plugin\src\main\java\edu\zju\jfq\codemetric\maven\bootstrap\OutputConfig.java
+C:\Users\fangqiao.jfq\Documents\code-metric-maven-plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\DependencyCollector.java
+C:\Users\fangqiao.jfq\Documents\code-metric-maven-plugin\src\main\java\edu\zju\jfq\codemetric\maven\plugin\MavenProjectConvert.java
