@@ -1,0 +1,6 @@
+PACKAGE,TYPE,LINE,Ce,DAC,MOA,DAM,Ae,MPC,NOPM,LCOM,MFA,MPC,NOC,WMC,TCC,CAM,CBO,NOF,DIT,NPM
+edu.zju.jfq.singlemodule,QuickSort,6,2.0,3.0,0.0,NaN,0.0,3.0,0.0,3.0,0.0,0.0,0.0,10.0,0.0,0.8333333333333334,1.0,0.0,1.0,1.0
+edu.zju.jfq.singlemodule,SingleModule,3,7.0,4.0,0.0,NaN,0.0,8.0,0.0,3.0,0.0,5.0,0.0,4.0,0.0,0.3333333333333333,4.0,0.0,1.0,3.0
+edu.zju.jfq.singlemodule,SingleModule$(anonymous),24,5.0,3.0,0.0,NaN,1.0,10.0,0.0,6.0,1.0,6.0,0.0,4.0,0.0,0.5,5.0,0.0,1.0,4.0
+edu.zju.jfq.singlemodule,SingleModule.InnerClass,4,3.0,2.0,0.0,0.5,1.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0
+edu.zju.jfq.singlemodule,UserInfo,3,3.0,5.0,0.0,1.0,2.0,10.0,0.0,35.0,0.0,0.0,0.0,10.0,0.2727272727272727,0.25,1.0,5.0,1.0,10.0

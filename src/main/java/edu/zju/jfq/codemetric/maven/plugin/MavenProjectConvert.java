@@ -130,14 +130,8 @@ public class MavenProjectConvert {
     private void setSourceFileEnconding() {
         String encoding = (String) project.getProperties().get("project.build.sourceEncoding");
         if (encoding == null) {
-            encoding = new Xpp3Dom((Xpp3Dom)(project.getPlugin("org.apache.maven.plugins:maven-compiler-plugin")
-                    .getConfiguration())).getChild("encoding").getValue();
-            if (encoding == null)
-                config.setSourceFileEncoding("UTF-8");
-            else
-                config.setSourceFileEncoding(encoding);
-        }
-        else config.setSourceFileEncoding(encoding);
+            config.setSourceFileEncoding("UTF-8");
+        } else config.setSourceFileEncoding(encoding);
 
     }
 

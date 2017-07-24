@@ -125,7 +125,6 @@
 			<version>3.4</version>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>ccnt.analysis</groupId>
 			<artifactId>CodeMetrics</artifactId>
