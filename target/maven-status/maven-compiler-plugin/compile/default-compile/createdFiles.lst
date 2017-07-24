@@ -1,7 +1,0 @@
-com\alibaba\codemetric\maven\depency\tree\DependencyTreeResolutionListener.class
-com\alibaba\codemetric\maven\bootstrap\OutputConfig.class
-com\alibaba\codemetric\maven\plugin\CodeMetricsMojo.class
-com\alibaba\codemetric\maven\plugin\DependencyCollector.class
-com\alibaba\codemetric\maven\plugin\DependencyCollector$Dependency.class
-com\alibaba\codemetric\maven\plugin\MavenProjectConvert.class
-com\alibaba\codemetric\maven\plugin\DependencyCollector$1.class
