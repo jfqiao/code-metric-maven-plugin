@@ -8,6 +8,8 @@ sample/testProject/fx2048/output
 *.iml
 /out/
 /target/
+/test_project/
+/.settings
 # Ignore Gradle GUI config
 gradle-app.setting
 gradlew
