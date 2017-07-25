@@ -10,8 +10,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.rtinfo.RuntimeInformation;
 import org.apache.maven.shared.dependency.tree.DependencyTreeBuilder;
-
-import ccnt.analysis.metrics.Main;
+import com.alibaba.analysis.metrics.Main;
 
 @Mojo(name = "calculate")
 public class CodeMetricsMojo extends AbstractMojo {
