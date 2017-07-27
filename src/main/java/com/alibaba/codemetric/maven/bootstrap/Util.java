@@ -11,17 +11,6 @@ public class Util {
 
     private static PrintWriter pw;
 
-    static {
-        File file = new File(ANALYSIS_PATH);
-        if (!file.exists())
-            try {
-                file.createNewFile();
-                pw = new PrintWriter(new FileOutputStream(file, true));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-    }
-
 
 
     public static int getLines(String dir) {
@@ -81,7 +70,27 @@ public class Util {
     }
 
     public static void csvWrite(String projectName, int lines) {
-        if (pw != null)
+        File file = new File(ANALYSIS_PATH);
+        if (!file.exists())
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        try {
+            pw = new PrintWriter(new FileOutputStream(file, true));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        if (pw != null) {
             pw.println(projectName + "," + lines);
+        }
+        close();
+    }
+
+    public static void close() {
+        if (pw != null) {
+            pw.close();
+        }
     }
 }
