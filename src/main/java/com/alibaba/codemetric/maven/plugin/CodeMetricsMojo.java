@@ -49,18 +49,17 @@ public class CodeMetricsMojo extends AbstractMojo {
                 return;
             MavenProjectConvert mpc = new MavenProjectConvert(pro, dependencyCollector, localRepository);
             mpc.setConfig();
-            int lines = Util.getLines(mpc.getConfig().getSourceFilePath());
-            Util.csvWrite(pro.getGroupId() + "-"+pro.getArtifactId(), lines);
+//            int lines = Util.getLines(mpc.getConfig().getSourceFilePath());
+//            Util.csvWrite(pro.getGroupId() + "-"+pro.getArtifactId(), lines);
 //                getLog().error(mpc.getConfig().toString());
-//            Main.calculate(mpc.getConfig().getSourceFilePath(),
-//                    mpc.getConfig().getCompileFilePath(),
-//                    mpc.getConfig().getOutputJarPath(),
-//                    mpc.getConfig().getSourceFileEncoding(),
-//                    mpc.getConfig().getdependencyPath(),
-//                    pro.getArtifactId(),
-//                    null,
-//                    pro.getBasedir().getAbsolutePath());
-//            }
+            Main.calculate(mpc.getConfig().getSourceFilePath(),
+                    mpc.getConfig().getCompileFilePath(),
+                    mpc.getConfig().getOutputJarPath(),
+                    mpc.getConfig().getSourceFileEncoding(),
+                    mpc.getConfig().getdependencyPath(),
+                    pro.getArtifactId(),
+                    null,
+                    pro.getBasedir().getAbsolutePath());
         } catch (Exception e) {
             getLog().error("Some error in pom.xml file.");
             throw new MojoExecutionException("Code Metric maven plugin failed.");
